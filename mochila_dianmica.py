@@ -21,7 +21,7 @@ def mochilaDinamica(capacidade,pesos,valores,tam):
             # o valor resultante da soma do valor da linha anterior somado 
             # ao peso dos valores. 
             if pesos[i - 1] <= w:
-                m[(i,w)] = max(m[(i - 1,w)],valores[i - 1] + m[(i-1,w-pesos[i - 1])])
+                m[(i,w)] = max(m[(i - 1,w)], valores[i - 1] + m[(i-1,w-pesos[i - 1])])
             else:
                 # A entrada no dicionário se torna o valor da linha anterior
                 m[(i,w)] = m[(i-1,w)]
