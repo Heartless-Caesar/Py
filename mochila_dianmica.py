@@ -37,7 +37,8 @@ def mochilaDinamica(capacidade,pesos,valores,tam):
         if m[i, c] - m[i - 1, c - pesos[i - 1]] == valores[i - 1]:
             elements.append(i)
             c -= pesos[i - 1]            
-
+    
+    # Print da lista dos elementos presentes - 1 
     print(elements)        
 
     return m[(aux,capacidade)]    
