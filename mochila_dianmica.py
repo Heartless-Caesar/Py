@@ -4,7 +4,6 @@ capacidade = 15
 aux = len(valores)
 elements = []
 
-
 def mochilaDinamica(capacidade,pesos,valores,tam):
     # "m" é o dicionário que irá conter os dados
     m = {} 
@@ -16,7 +15,7 @@ def mochilaDinamica(capacidade,pesos,valores,tam):
     for i in range(1,aux + 1):
         # Iterar sobre as colunas
         for w in range(capacidade + 1):
-            # Se o peso do item pesa menos que o peso daquela coluna o valor 
+            # Se o peso do item for menor que o peso daquela coluna
             # a chave e o valor passam a ser ou o valor da linha anterior ou
             # o valor resultante da soma do valor da linha anterior somado 
             # ao peso dos valores. 
