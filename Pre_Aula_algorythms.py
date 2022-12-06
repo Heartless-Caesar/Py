@@ -1,8 +1,5 @@
 import random
 
-
-
-
 def main():
 
     print("Selecione o tamanho de vetor que será ordenado:\n1 - 5 elementos\n2 - 10 elementos\n3 - 15 elementos")
@@ -29,12 +26,7 @@ def main():
     quick_sort(random_list, 0, tam - 1)
 
     bubble_sort(random_list_2)
-
-    print(f"Ordenada Quick Sort {random_list}\n")
-    print(f"Comparacoes Quick = {quick_comp}")
-
-    print(f"Ordenada Bubble Sort {random_list_2}\n")
-    print(f"Comparacoes Bubble {bubble_comp}")    
+        
 
 
 def quick_sort(list,low,high):
@@ -63,7 +55,7 @@ def dividir(arr, low, high):
             (arr[i], arr[j]) = (arr[j], arr[i])
 
     (arr[i + 1], arr[high]) = (arr[high], arr[i + 1])
-    
+    print(f"Comparacoes Quick = {quick_comp}")
     return i + 1
 
 
@@ -76,6 +68,8 @@ def bubble_sort(arr):
                 temp = arr[j + 1]
                 arr[j + 1] = arr[j]
                 arr[j] = temp
+
+    print(f"Comparacoes Bubble {bubble_comp}")            
 
 
 main()
